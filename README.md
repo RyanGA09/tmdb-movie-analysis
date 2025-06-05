@@ -118,9 +118,9 @@ tmdb-movie-analysis/
 
 Ryan Gading Abdullah
 
-- [GitHub](https://github.com/RyanGA09)
-- [Instagram](https://instagram.com/ryan_g._a)
-- [Linkedin](https://www.linkedin.com/in/ryan-gading-abdullah/)
+- [![GitHub](https://img.shields.io/badge/GitHub-Profile-black?logo=github&style=for-the-badge)](https://github.com/RyanGA09)
+- [![Instagram](https://img.shields.io/badge/Instagram-Follow-E4405F?logo=instagram&style=for-the-badge)](https://instagram.com/ryan_g._a)
+- [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0077B5?logo=linkedin&style=for-the-badge)](https://www.linkedin.com/in/ryan-gading-abdullah/)
 
 ## ☕ Support Me
 
