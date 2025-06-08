@@ -136,7 +136,7 @@ Copyright &copy; 2025 Ryan Gading Abdullah. All rights reserved.
 
 This project is licensed under the MIT License - see the [MIT LICENSE](LICENSE) for details.
 
-## 📧 Contact
+<!-- ## 📧 Contact
 
 For commercial inquiries, please contact:
 
@@ -144,4 +144,4 @@ For commercial inquiries, please contact:
 
 Or reach me on LinkedIn:
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?logo=linkedin&style=for-the-badge)](https://www.linkedin.com/in/ryan-gading-abdullah/)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?logo=linkedin&style=for-the-badge)](https://www.linkedin.com/in/ryan-gading-abdullah/) -->
