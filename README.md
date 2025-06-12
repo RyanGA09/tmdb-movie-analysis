@@ -31,7 +31,7 @@ A movie studio is planning to optimize its production strategy and wants to iden
 
 Key columns used:
 
-- `budget`, `revenue`, `release_date`, `genres`, `vote_average`
+- `budget`, `revenue`, `release_date`, `genres`, `vote_average`, `vote_count`, `runtime`
 - Converted `genres` from JSON to categorical
 - Created `profit` = `revenue` - `budget`
 - Extracted `release_year` from `release_date`
@@ -43,6 +43,8 @@ Key columns used:
 - Removed duplicates and missing values
 - Standardized financial columns
 - Created new features: `profit`, `release_year`, simplified `main_genre`
+- Extracted main director and main actor from credits data
+- Added `director_score` and `actor_score` as average profit metrics per person
 
 ---
 
@@ -50,27 +52,30 @@ Key columns used:
 
 Visualizations include:
 
-- 📈 **Budget vs Revenue** scatter plot
-- 🎭 **Genre vs Profit** bar chart
-- 🗓️ **Profit over Release Year**
-- 🧮 Correlation heatmap
+- 📈 **Budget vs Revenue** scatter plot dengan warna genre
+- 🎭 **Average Profit per Genre** bar chart
+- 🎬 **Top Directors and Actors by Profit** bar chart
 
 ---
 
 ## 🤖 Modeling / Analysis
 
-- Linear Regression: Predict revenue from budget, vote_average, and popularity
-- Clustering: K-Means to group movies by genre and financial performance
+- Linear Regression: Predict revenue using  
+  `budget`, `vote_average`, `vote_count`, `runtime`, `director_score`, and `actor_score`
+- Clustering: K-Means untuk mengelompokkan film berdasarkan genre dan performa finansial
+
+---
+
+## 🧪 Additional Visualizations Post-Modeling
+
+- 🧪 **Model Prediction vs Actual Revenue** plot perbandingan prediksi dan nilai aktual
+- 🧩 **Clustering hasil KMeans** visualisasi cluster label pada data
 
 ---
 
 ## 📊 Dashboard
 
-Built interactive dashboards using:
-
-- ✅ Tableau
-- ✅ Power BI
-- ✅ Google Looker Studio
+Built interactive dashboards using `Tableau`, `Power BI`, `Google Looker Studio`, or `other similar tools`.
 
 Outputs:
 
@@ -80,21 +85,44 @@ Outputs:
 
 ---
 
+## 📈 Outcome & Recommendations
+
+- **Genres** like _Adventure_ and _Action_ often yield high profits
+- **Overbudgeting** on certain genres (e.g., Documentary) leads to losses
+- Budget is positively correlated with revenue, but not linearly
+
+For more detailed insights and strategic recommendations, please see the reports in the `result/` folder:
+
+- [Communicating Results](result/communication_result.md)
+- [Decision Making](result/decision_making.md)
+
+---
+
+<!-- ## 📖 Read More
+
+Check out my article on [Medium](https://medium.com/@ryangadingabdullah):
+
+[![Medium](https://img.shields.io/badge/Medium-Article-000000?logo=medium&style=for-the-badge)](https://medium.com/@ryangadingabdullah/article)
+
+You can check the visualization result from my [Tableau](https://public.tableau.com/app/profile/ryanga09/vizzes) Dashboard on the badge below:
+
+[![Tableau](https://img.shields.io/badge/Tableau-View-orange?logo=tableau&style=for-the-badge)](https://public.tableau.com/app/profile/ryanga09/vizzes) -->
+
 ## 📁 Folder Structure
 
 ```bash
 tmdb-movie-analysis/
 │
 ├── data/
-│ ├── raw/
-│ └── processed/
-├── visuals/
+│   ├── processed/
+│   └── raw/
 ├── notebooks/
-├── scripts/
-├── README.md
-├── requirements.txt
+├── result/
+├── visualizations/
 ├── .gitignore
-└── LICENSE
+├── LICENSE
+├── README.md
+└── requirements.txt
 ```
 
 ---
@@ -108,19 +136,25 @@ tmdb-movie-analysis/
 
 ---
 
-## 📈 Outcome & Recommendations
-
-- **Genres** like _Adventure_ and _Action_ often yield high profits
-- **Overbudgeting** on certain genres (e.g., Documentary) leads to losses
-- Budget is positively correlated with revenue, but not linearly
-
 ## 👨‍💻 Author
 
 Ryan Gading Abdullah
 
+<!-- ## 📧 Contact
+
+For commercial inquiries, please contact:
+
+[![Gmail](https://img.shields.io/badge/Gmail-Contact-D14836?logo=gmail&style=for-the-badge)](mailto:ryangadinga90@gmail.com) -->
+
+---
+
+## 🔗 Find Me At
+
 - [![GitHub](https://img.shields.io/badge/GitHub-Profile-black?logo=github&style=for-the-badge)](https://github.com/RyanGA09)
 - [![Instagram](https://img.shields.io/badge/Instagram-Follow-E4405F?logo=instagram&style=for-the-badge)](https://instagram.com/ryan_g._a)
 - [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0077B5?logo=linkedin&style=for-the-badge)](https://www.linkedin.com/in/ryan-gading-abdullah/)
+
+---
 
 ## ☕ Support Me
 
@@ -130,18 +164,10 @@ This is a non-commercial project. If you find it useful and would like to suppor
 
 <!-- [![PayPal](https://img.shields.io/badge/PayPal-Donate-00457C?logo=paypal&style=for-the-badge)](https://www.paypal.me/ryangading) -->
 
+---
+
 ## 🪪 LICENSE
 
 Copyright &copy; 2025 Ryan Gading Abdullah. All rights reserved.
 
 This project is licensed under the MIT License - see the [MIT LICENSE](LICENSE) for details.
-
-<!-- ## 📧 Contact
-
-For commercial inquiries, please contact:
-
-[![Gmail](https://img.shields.io/badge/Gmail-Contact-D14836?logo=gmail&style=for-the-badge)](mailto:ryangadinga90@gmail.com)
-
-Or reach me on LinkedIn:
-
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?logo=linkedin&style=for-the-badge)](https://www.linkedin.com/in/ryan-gading-abdullah/) -->
